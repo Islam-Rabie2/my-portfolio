@@ -6,7 +6,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    overflow: hidden;
+    overflow-y: hidden;
     font-family: 'Hedvig Letters Serif', serif;
 }
 
