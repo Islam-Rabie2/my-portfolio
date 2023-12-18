@@ -6,6 +6,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
+    overflow: hidden;
     font-family: 'Hedvig Letters Serif', serif;
 }
 
@@ -18,7 +19,6 @@
 
 html {
     font-size: 62.5%;
-    overflow-x: hidden;
 }
 
 body {
@@ -78,7 +78,6 @@ body {
 
 section {
     min-height: 100vh;
-    width: 100%;
 }
 
 /* ----------------------------home section css ------------------------*/
@@ -297,7 +296,7 @@ section {
 
 .about {
     width: 100%;
-    padding: 0;
+    padding: 10rem 9% 2rem 9%;
     display: inline-block;
     justify-content: space-between;
     gap: 2rem;
@@ -757,7 +756,7 @@ footer span {
     }
 
     section {
-        padding: 0;
+        padding: 10rem 4% 2rem;
     }
 
 
@@ -825,7 +824,6 @@ footer span {
 @media (max-width: 768px) {
     .header {
         background: var(--bg-color);
-        width: 100%;
     }
 
     #menu-icno {
@@ -837,6 +835,7 @@ footer span {
         top: 100%;
         left: -100%;
         width: 100%;
+        padding: 1rem 4%;
         background: var(--main-color);
         box-shadow: 0 5rem 1rem rgba(0, 0, 0, .2);
         z-index: 1;
@@ -1195,7 +1194,3 @@ footer span {
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
-
-
-
-
