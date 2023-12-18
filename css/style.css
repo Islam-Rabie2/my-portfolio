@@ -78,6 +78,7 @@ body {
 
 section {
     min-height: 100vh;
+    width: 100%;
 }
 
 /* ----------------------------home section css ------------------------*/
@@ -756,7 +757,7 @@ footer span {
     }
 
     section {
-        padding: 10rem 4% 2rem;
+        padding: 0;
     }
 
 
@@ -1137,7 +1138,7 @@ footer span {
     .home-content .text-animate h3 {
         font-size: 2.4rem;
     }
-     body{
+    body{
         margin: auto;
     }
 }
@@ -1194,7 +1195,3 @@ footer span {
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
-
-
-
-
