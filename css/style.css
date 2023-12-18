@@ -753,7 +753,7 @@ footer span {
 @media (max-width: 991px) {
 
     .header {
-        padding: 2rem 4%;
+        padding: 2rem 0;
     }
 
     section {
