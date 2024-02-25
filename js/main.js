@@ -42,11 +42,8 @@ function sendMail() {
         phone: document.getElementById("phone").value,
         message: document.getElementById("message").value,
     };
-
-
     const serviceID = "service_i684dgk";
     const templateID = "template_d0yxbr8"
-
     emailjs.send(serviceID, templateID, params)
         .then(
             res => {
@@ -58,4 +55,21 @@ function sendMail() {
                 alert("your massage sent successfuly")
             })
         .catch((err) => console.log(err));
-}
+};
+
+// Job title 
+const tyoed = new Typed('.multiple-text', {
+    strings: ['Frontend Developer', 'Ui Ux Designer'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop:true
+});
+
+const tyoed2 = new Typed('.multiple-text2', {
+    strings: ['Frontend Developer', 'Ui Ux Designer'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop:true
+});
