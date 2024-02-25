@@ -931,6 +931,7 @@ footer span {
         top: 10px;
         font-size: 2.8rem;
         text-align: center;
+        width: 100%;
     }
 
     .home-content p {
