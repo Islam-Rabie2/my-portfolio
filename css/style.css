@@ -55,6 +55,7 @@ body {
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
+    letter-spacing: 0.1em;
 }
 
 .navbar a {
@@ -95,45 +96,51 @@ section {
     max-width: 60%;
 }
 
+.home-content h2{
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.1em;
+}
+
 .home-content h1 {
     font-size: 5rem;
     font-weight: 700;
     line-height: 1.3;
-}
-
-.home-content .text-animate {
-    position: relative;
-    width: 32rem;
+    letter-spacing: 5px;
 }
 
 .home-content .text-animate h3 {
     font-size: 3.2rem;
-    font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    color: transparent;
-    -webkit-text-stroke: 0.6px var(--main-color);
-    background-image: linear-gradient(var(--main-color), var(--main-color));
+    color: var(--text-color);
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+}
+.home-content .text-animate h3 span{
+    color: var(--main-color);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     background-position: 0 0;
-    animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
-    -webkit-animation: homeBgText 6s linear infinite;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 8px;
 }
 
-.home-content .text-animate h3::before {
+.home-content .text-animate h3 span::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
-    border-right: 2px solid var(--main-color);
     z-index: -1;
-    animation: homeCursorText 6s linear infinite;
     animation-delay: 2s;
-    -webkit-animation: homeCursorText 6s linear infinite;
 }
 
 .home-content p {
@@ -207,7 +214,7 @@ section {
 
 .home-sci {
     position: relative;
-    top: 13rem;
+    top: 10rem;
     width: 170px;
     display: flex;
     justify-content: space-between;
@@ -365,13 +372,23 @@ section {
 }
 
 .about-content h3 {
+    color: #ededed;
     font-size: 2.7rem;
+}
+
+.about-content h3  span{
+    letter-spacing: 3px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .about-content p {
     font-size: 1.5rem;
     margin: 1.8rem 0 3.5rem;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
 
 }
 
@@ -443,7 +460,7 @@ section {
     border-radius: 10px 50px;
     padding: 20px;
     background: #042135;
-
+    width: 90px;
 }
 
 .skills-hero .skills-img img:hover {
@@ -486,9 +503,9 @@ section {
 
 .port-box {
     position: relative;
-    min-width: 31.4rem;
+    min-width: 33.4rem;
     max-width: 31.4rem;
-    height: 25rem;
+    height: 28rem;
     border-radius: 15px;
     overflow: hidden;
     background: var(--second-bg-color);
@@ -891,36 +908,47 @@ footer span {
         text-align: center;
         align-items: center;
         width: 100%;
+        height: 110vh;
     }
+
+    .home-content h2{
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.3;
+        letter-spacing: 0.1em;
+        margin-top: 50px;
+    }
+    
 
     .home-content h1 {
         width: 100%;
         font-size: 4.5rem;
-        top: 27px;
+        top: 5px;
         position: relative;
     }
 
-    .home-content .text-animate {
-        margin: auto;
-        top: 35px;
+    .home-content .text-animate h3 {
+        top: 10px;
+        font-size: 2.8rem;
+        text-align: center;
     }
 
     .home-content p {
-        top: 27px;
+        top: 0px;
         position: relative;
         width: 100%;
     }
 
     .home-content .btn-box {
         margin: auto;
-        top: 27px;
+        top: 0px;
 
     }
 
     .home-content .home-sci {
         position: relative;
         width: 100%;
-        top: 6.5rem;
+        top: 3rem;
         text-align: center;
         justify-content: space-evenly;
 
@@ -1030,6 +1058,17 @@ footer span {
     }
 }
 
+@media (max-width: 603px){
+    .skills{
+        height: 115vh;
+    }
+}
+
+@media (max-width: 540px){
+    .home-content h1{
+        font-size: 3.9rem;
+    }
+}
 
 @media (max-width: 520px) {
     html {
@@ -1056,6 +1095,8 @@ footer span {
 
     .home-content .text-animate h3 {
         width: 100%;
+        font-size: 2.3rem;
+        margin-top: 10px;
     }
 
     .home-content .text-animate {
@@ -1068,46 +1109,61 @@ footer span {
         gap: 10px;
         margin: auto;
     }
+    .skills{
+        height: 120vh;
+    }
+}
+
+@media (max-width: 451px){
+    .home-content .text-animate h3 {
+        font-size: 2.2rem;
+    }
 }
 
 @media (max-width: 433px) {
-
     .home-content .text-animate h3 {
-        font-size: 3.1rem;
+        font-size: 2.1rem;
     }
 }
 
 @media (max-width: 413px) {
     .home-content .text-animate h3 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }
 
-
-@media (max-width: 408px) {
-    .home-content .text-animate h3 {
-        font-size: 2.9rem;
-    }
-}
-
-@media (max-width: 392px) {
+@media (max-width: 413px) {
 
     .home-content h1 {
-        font-size: 4.2rem;
+        font-size: 3.8rem;
     }
 }
 
-@media (max-width: 385px) {
+@media (max-width: 404px) {
 
-    .home-content .text-animate h3 {
-        font-size: 2.8rem;
+    .home-content h1 {
+        font-size: 3.6rem;
     }
 }
 
-@media (max-width: 373px) {
+@media (max-width: 390px) {
+    .home-content h1 {
+        font-size: 3.5rem;
+    }
 
     .home-content .text-animate h3 {
-        font-size: 2.7rem;
+        font-size: 1.9rem;
+    }
+
+    .about-content h3{
+        font-size: 2.6rem;
+    }
+}
+
+@media (max-width: 381px) {
+
+    .home-content h1 {
+        font-size: 3.4rem;
     }
 
     .skills-hero .skills-img img {
@@ -1115,28 +1171,47 @@ footer span {
     }
 }
 
-@media (max-width: 368px) {
+@media (max-width: 372px) {
 
     .home-content h1 {
-        font-size: 4rem;
+        font-size: 3.3rem;
     }
-}
-
-@media (max-width: 358px) {
-
     .home-content .text-animate h3 {
+        font-size: 1.8rem;
+    }
+    .about-content h3{
         font-size: 2.5rem;
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 364px){
+    .home-content h1 {
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 360px){
+    .home-content .text-animate h3 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 357px) {
 
     .home-content h1 {
-        font-size: 3.8rem;
+        font-size: 2.9rem;
     }
+    body{
+        margin: auto;
+    }
+    .about-content h3{
+        font-size: 2.3rem;
+    }
+}
 
-    .home-content .text-animate h3 {
-        font-size: 2.4rem;
+@media (max-width: 346px){
+    .skills{
+        height: 135vh;
     }
     body{
         margin: auto;
@@ -1145,7 +1220,21 @@ footer span {
 
 /* KETFRAMES ANIMATION */
 
-@keyframes homeBgText {
+@keyframes homeSpinner {
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes abuotSpinner {
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* @keyframes homeBgText {
 
     0%,
     10%,
@@ -1157,9 +1246,9 @@ footer span {
     85% {
         background-position: 0 0;
     }
-}
+} */
 
-@keyframes homeCursorText {
+/* @keyframes homeCursorText {
 
     0%,
     10%,
