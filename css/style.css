@@ -1218,6 +1218,12 @@ footer span {
     }
 }
 
+@media (max-width: 346px){
+    .home-content .text-animate h3 {
+        font-size: 1.6rem;
+    }
+}
+
 /* KETFRAMES ANIMATION */
 
 @keyframes homeSpinner {
